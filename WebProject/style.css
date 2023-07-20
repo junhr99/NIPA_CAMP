@@ -1,0 +1,9 @@
+
+.para{margin-bottom: 15%;}
+.logo{border: 1px solid gold; float: left;}
+.table-location{float:left; margin-right: 10%;}
+.winner-border{border:3px solid black}
+.image{width:70px}
+.middle-obj{margin-right: 15%;float:left;}
+.table{border:1px solid black}
+table, th, td { border: 1px solid black; border-collapse: collapse }
