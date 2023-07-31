@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    
+  
 <header>
     <div class=para>
-        <a href='./a.html'><img class=logo src="./img/logo.png"></img></a>
-        <input class=search-bar placeholder="ex: 어깨가 뻐근할 때">
+        <!-- <a href='./a.html'><img class=logo src="./img/logo.png"></img></a> -->
+        <a href='./index.html' class=logo-link><p class=logo-text>WELLNESS</p></a>
+        <input class=search-bar placeholder="예시: 어깨가 뻐근할 때">
         <button class=search-btn>Search</button>
         <div class=admin-loc>
-            <button class=admin-btn>Login</button>
-            <button class=admin-btn>Register</button>
+            <a  onclick="openAdminPage('login')"><button class=admin-btn>Login</button></a>
+            <a  onclick="openAdminPage('register')"><button class=admin-btn>Register</button></a>
         </div>
     </div>
     
@@ -34,28 +35,48 @@
 
 <main class=body-main>
     <article>
-        <h1>Workout</h1>
-        <div class="gallery-container">
-            
-            <div class="gallery">
-              <div class="gallery-item">
-                <img src="./img/arrow.png" alt="Image 1">
-              </div>
-              <div class="gallery-item">
-                <img src="./img/arrow.png" alt="Image 2">
-              </div>
-              <div class="gallery-item">
-                <img src="./img/arrow.png" alt="Image 3">
-              </div>
-              <button class=prev-btn>Prev</button>
-              <button class=next-btn>Next</button>
-            </div>
+        <h1 class="para-text">Workout</h1>
+        <div class="slides_parent">
+        <div class="slide_wrapper_workout">
+          <ul class="slides slides_workout">
+            <li data-youtube-id="gMaB-fG4u4g"></li>
+            <li data-youtube-id="QhRcs9d2Y9E"></li>
+            <li data-youtube-id="mUnSpfItRf0"></li>
+            <li data-youtube-id="UH9sZnQLu6I"></li>
+            <li data-youtube-id="fC36CluWbAA"></li>
+          </ul>
+          
         </div>
-
+      </div>
+        <p class="controls">
+          <span class="prev-btn" onclick="prevSlide('workout')">prev</span>
+          <span class="next-btn" onclick="nextSlide('workout')">next</span>
+        </p>
     </article>
-
     <article>
-        <h1>Diet</h1>
+      <h1 class="para-text">Diet</h1>
+      <div class="slides_parent">
+      <div class="slide_wrapper_diet">
+        <ul class="slides slides_diet">
+          <li><img  src="./img/diet1.png" alt=""><span >dietshin.com</span></li>
+          <li><img src="./img/diet2.png" alt=""><span >dietshin.com</span></li>
+          <li><img src="./img/diet3.png" alt=""><span >dietshin.com</span></li>
+          <li><img src="./img/diet4.png" alt=""><span >dietshin.com</span></li>
+          <li><img src="./img/diet5.png" alt=""><span >dietshin.com</span></li>
+          <li><img src="./img/diet6.png" alt=""><span >dietshin.com</span></li>
+        </ul>
+      </div>
+      
+    </div>
+    
+      <p class="controls">
+        <span class="prev-btn" onclick="prevSlide('diet')">prev</span>
+        <span class="next-btn" onclick="nextSlide('diet')">next</span>
+      </p>
+  </article>
+
+    <!-- <article>
+        <h1 class="para-text">Diet</h1>
         <div class="gallery-container">
             
             <div class="gallery">
@@ -68,18 +89,19 @@
               <div class="gallery-item">
                 <img src="./img/arrow.png" alt="Image 3">
               </div>
-              <button class=prev-btn>Prev</button>
-              <button class=next-btn>Next</button>
+              <button class=prev-btn onclick="prevSlide('diet')"> < Prev</button>
+              <button class=next-btn onclick="nextSlide('diet')"> Next > </button>
             </div>
         </div>
         
 
-    </article>
+    </article> -->
 </main>
 
 <footer>
     <p class=footer-info>contact: junhr99@naver.com</p>
 </footer>
+<script src="./script.js"></script>
 </body>
 
 </html>
