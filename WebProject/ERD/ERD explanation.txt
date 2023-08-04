@@ -1,0 +1,28 @@
+<Users: 사용자 정보에 대한 테이블>
+user_id: 사용자의 Primary key
+user_name: 사용자의 이름
+user_weight: 사용자의 몸무게
+user_height: 사용자의 키
+user_problem: 사용자가 개선하고 싶은 부분(다이어트, 허리통증, ...)
+
+<User_Workout: 사용자가 저장한 운동 정보들>
+index_id: 이 테이블의 Primary key
+user_id: 해당 사용자를 가리키는 Users 테이블의 Foreign Key
+workout_id: 해당 운동을 가리키는 Workouts 테이블의 Foreign Key
+
+<User_Diets: 사용자가 저장한 식단 정보들>
+index_id: 이 테이블의 Primary key
+user_id: 해당 사용자를 가리키는 Users 테이블의 Foreign Key
+diet_id: 해당 식단을 가리키는 Diets 테이블의 Foreign Key
+
+<Workouts: 운동 정보에 대한 테이블>
+workout_id: 이 테이블의 Primary Key
+video_link: 해당 운동의 유튜브 동영상 링크
+workout_type: 해당 운동의 특성(어깨, 목, 체지방, ...)
+
+<Diets: 식단 정보에 대한 테이블>
+diet_id: 이 테이블의 Primary Key
+diet_link: 해당 식단의 링크
+calorie: 해당 식단의 칼로리
+
+
